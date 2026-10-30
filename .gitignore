@@ -13,3 +13,5 @@ assets/music_*/
 editor/.launch.log
 *.part
 work/
+.env
+.env.*
