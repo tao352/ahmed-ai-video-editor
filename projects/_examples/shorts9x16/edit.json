@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "settings": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "background": "#101827",
+    "duration": 15
+  },
+  "theme": {
+    "colors": {
+      "accent": "#e6aa5e"
+    },
+    "fonts": {}
+  },
+  "base": [
+    {
+      "src": "scene.mp4",
+      "start": 0,
+      "duration": 8,
+      "fit": "blurfill"
+    },
+    {
+      "src": "scene.mp4",
+      "start": 8,
+      "duration": 2,
+      "fit": "blurfill"
+    }
+  ],
+  "layout": {
+    "mode": "full",
+    "beats": []
+  },
+  "audio": {
+    "sfx": []
+  },
+  "captions": {
+    "words": [
+      [
+        0.4,
+        1,
+        "Stop"
+      ],
+      [
+        1,
+        1.5,
+        "the"
+      ],
+      [
+        1.5,
+        2.3,
+        "scroll"
+      ],
+      [
+        3.2,
+        3.9,
+        "Make"
+      ],
+      [
+        3.9,
+        4.5,
+        "it"
+      ],
+      [
+        4.5,
+        5.5,
+        "matter"
+      ],
+      [
+        6.3,
+        7.2,
+        "One"
+      ],
+      [
+        7.2,
+        8.2,
+        "clear"
+      ],
+      [
+        8.2,
+        9.4,
+        "idea"
+      ]
+    ],
+    "style": {
+      "preset": "bottom-bold",
+      "maxWords": 3,
+      "size": 58
+    },
+    "enabled": true
+  },
+  "clips": [
+    {
+      "id": "hook",
+      "component": "KineticText",
+      "from": 0,
+      "to": 3,
+      "props": {
+        "tokens": [
+          "STOP",
+          "THE",
+          "SCROLL"
+        ]
+      },
+      "track": 2
+    },
+    {
+      "id": "punch",
+      "component": "FullscreenText",
+      "from": 3,
+      "to": 6,
+      "props": {
+        "text": "Make it matter",
+        "background": "dim"
+      },
+      "track": 2
+    },
+    {
+      "id": "second-hook",
+      "component": "KineticText",
+      "from": 6,
+      "to": 10,
+      "props": {
+        "tokens": [
+          "ONE",
+          "CLEAR",
+          "IDEA"
+        ]
+      },
+      "track": 2
+    },
+    {
+      "id": "end",
+      "component": "EndCardGeneric",
+      "from": 10,
+      "to": 15,
+      "props": {
+        "title": "Make your next story count",
+        "cta": "Start creating",
+        "handle": "@studio"
+      },
+      "track": 2
+    }
+  ],
+  "transitions": [
+    {
+      "at": 3,
+      "type": "glitch",
+      "duration": 0.4
+    },
+    {
+      "at": 6,
+      "type": "slide",
+      "duration": 0.45
+    },
+    {
+      "at": 10,
+      "type": "fade",
+      "duration": 0.45
+    }
+  ],
+  "zooms": [
+    {
+      "type": "punch",
+      "t": 3,
+      "peak": 1.1,
+      "hold": 0.15
+    },
+    {
+      "type": "punch",
+      "t": 6,
+      "peak": 1.13,
+      "hold": 0.15
+    },
+    {
+      "type": "punch",
+      "t": 8,
+      "peak": 1.08,
+      "hold": 0.1
+    }
+  ]
+}

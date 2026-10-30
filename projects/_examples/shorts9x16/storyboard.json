@@ -1,0 +1,68 @@
+{
+  "edit": "edit.json",
+  "title": "shorts9x16 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "KineticText",
+      "note": "All hook tokens fit inside the safe area on a dark panel.",
+      "components": [
+        "hook"
+      ]
+    },
+    {
+      "t": 3.2,
+      "title": "glitch transition",
+      "note": "Overlay effect over the active scene; inspect the effect peak without changing scene timing.",
+      "clip": [
+        3,
+        3.5
+      ]
+    },
+    {
+      "t": 3.6,
+      "title": "FullscreenText",
+      "note": "Large fitted title with strong dark backing inside the title-safe area.",
+      "components": [
+        "punch"
+      ]
+    },
+    {
+      "t": 6.225,
+      "title": "slide transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        6,
+        6.55
+      ]
+    },
+    {
+      "t": 6.6,
+      "title": "KineticText",
+      "note": "All hook tokens fit inside the safe area on a dark panel.",
+      "components": [
+        "second-hook"
+      ]
+    },
+    {
+      "t": 10.225,
+      "title": "fade transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        10,
+        10.55
+      ]
+    },
+    {
+      "t": 10.6,
+      "title": "EndCardGeneric",
+      "note": "Final solid end card alone: large title, readable subtitle, CTA and handle.",
+      "components": [
+        "end"
+      ]
+    }
+  ]
+}

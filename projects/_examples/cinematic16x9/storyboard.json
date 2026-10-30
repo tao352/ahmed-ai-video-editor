@@ -1,0 +1,63 @@
+{
+  "edit": "edit.json",
+  "title": "cinematic16x9 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "VideoLayer + ColorGrade + FilmGrain + Vignette + Letterbox",
+      "note": "B-roll fills the scene; footage remains sharp at its landing frame. Warm tint and contrast/saturation treatment over the underlying footage. Restrained tiled grain visible in the footage, together with the other optical overlays. Soft darkening near frame edges, with the image center preserved. True 2.39:1 bars computed from the 1920x1080 canvas.",
+      "components": [
+        "shot-one",
+        "grade",
+        "grain",
+        "vignette",
+        "letterbox"
+      ]
+    },
+    {
+      "t": 1.6,
+      "title": "FullscreenText",
+      "note": "Large fitted title with strong dark backing inside the title-safe area.",
+      "components": [
+        "title"
+      ]
+    },
+    {
+      "t": 6.3,
+      "title": "scenePush transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        6,
+        6.7
+      ]
+    },
+    {
+      "t": 6.6,
+      "title": "VideoLayer",
+      "note": "B-roll fills the scene; footage remains sharp at its landing frame.",
+      "components": [
+        "shot-two"
+      ]
+    },
+    {
+      "t": 8.8,
+      "title": "lightLeak transition",
+      "note": "Overlay effect over the active scene; inspect the effect peak without changing scene timing.",
+      "clip": [
+        8.5,
+        9.2
+      ]
+    },
+    {
+      "t": 9.1,
+      "title": "LightLeak",
+      "note": "Soft warm light leak overlay across the cinematic footage.",
+      "components": [
+        "leak"
+      ]
+    }
+  ]
+}

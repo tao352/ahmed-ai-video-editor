@@ -1,0 +1,24 @@
+{
+  "name": "studio-editor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "app": "vite build && vite preview",
+    "serve": "vite preview",
+    "typecheck": "node ../reel/node_modules/typescript/bin/tsc --noEmit -p .",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10"
+  }
+}

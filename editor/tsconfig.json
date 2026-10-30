@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["DOM", "DOM.Iterable", "ES2023"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "types": ["node"],
+    "paths": {
+      "react": ["../reel/node_modules/@types/react"],
+      "react/*": ["../reel/node_modules/@types/react/*"],
+      "react-dom": ["./node_modules/@types/react-dom"],
+      "react-dom/*": ["./node_modules/@types/react-dom/*"],
+      "remotion": ["../reel/node_modules/remotion"],
+      "@remotion/player": ["../reel/node_modules/@remotion/player"],
+      "zod": ["../reel/node_modules/zod"]
+    }
+  },
+  "include": ["src", "server", "vite.config.ts"]
+}

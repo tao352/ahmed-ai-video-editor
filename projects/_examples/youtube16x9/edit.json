@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "settings": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "background": "#101827",
+    "duration": 19.5
+  },
+  "theme": {
+    "colors": {
+      "accent": "#e6aa5e"
+    },
+    "fonts": {}
+  },
+  "base": [
+    {
+      "src": "scene.mp4",
+      "fit": "blurfill",
+      "duration": 13.5
+    }
+  ],
+  "layout": {
+    "mode": "full",
+    "beats": []
+  },
+  "audio": {
+    "sfx": []
+  },
+  "captions": {
+    "words": [
+      [
+        0.9,
+        1.4,
+        "A"
+      ],
+      [
+        1.4,
+        2.2,
+        "story"
+      ],
+      [
+        2.2,
+        3.1,
+        "moves"
+      ]
+    ],
+    "style": {
+      "preset": "keyword-pop",
+      "keywords": [
+        "story",
+        "moves"
+      ],
+      "maxWords": 3
+    },
+    "enabled": true
+  },
+  "clips": [
+    {
+      "id": "chapter",
+      "component": "ChapterTitle",
+      "from": 0,
+      "to": 3.5,
+      "props": {
+        "title": "A Better Story",
+        "subtitle": "Ideas that move",
+        "chapter": "CHAPTER 01"
+      },
+      "track": 2
+    },
+    {
+      "id": "lower",
+      "component": "LowerThird",
+      "from": 3.5,
+      "to": 6.5,
+      "props": {
+        "name": "Alex Morgan",
+        "role": "Creative Director",
+        "style": "minimalLine"
+      },
+      "track": 2
+    },
+    {
+      "id": "broll",
+      "component": "VideoLayer",
+      "from": 6.5,
+      "to": 10,
+      "props": {
+        "src": "broll.mp4",
+        "fit": "cover",
+        "whip": false,
+        "fadeIn": 0.3,
+        "fadeOut": 0.2
+      },
+      "track": 2
+    },
+    {
+      "id": "kpi",
+      "component": "KpiCounter",
+      "from": 10,
+      "to": 13.5,
+      "props": {
+        "label": "Projects delivered",
+        "value": 128,
+        "subtitle": "Built for the next chapter"
+      },
+      "track": 2
+    },
+    {
+      "id": "end",
+      "component": "EndCardGeneric",
+      "from": 13.5,
+      "to": 19.5,
+      "props": {
+        "title": "Build your next story",
+        "subtitle": "Let's make it happen",
+        "cta": "Get started",
+        "handle": "@studio"
+      },
+      "track": 2
+    }
+  ],
+  "transitions": [
+    {
+      "at": 3.5,
+      "type": "slide",
+      "duration": 0.5
+    },
+    {
+      "at": 10,
+      "type": "fade",
+      "duration": 0.5
+    }
+  ]
+}

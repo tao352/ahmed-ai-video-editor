@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "settings": {
+    "width": 1080,
+    "height": 1080,
+    "fps": 30,
+    "background": "#101827",
+    "duration": 15.5
+  },
+  "theme": {
+    "colors": {
+      "accent": "#e6aa5e"
+    },
+    "fonts": {}
+  },
+  "base": [
+    {
+      "src": "scene.mp4",
+      "start": 0,
+      "duration": 8,
+      "fit": "blurfill"
+    },
+    {
+      "src": "scene.mp4",
+      "start": 8,
+      "duration": 2,
+      "fit": "blurfill"
+    }
+  ],
+  "layout": {
+    "mode": "full",
+    "beats": []
+  },
+  "audio": {
+    "sfx": []
+  },
+  "captions": {
+    "words": [
+      [
+        1,
+        1.5,
+        "This"
+      ],
+      [
+        1.5,
+        2,
+        "is"
+      ],
+      [
+        2,
+        2.6,
+        "a"
+      ],
+      [
+        2.6,
+        3.4,
+        "sample"
+      ],
+      [
+        3.4,
+        4,
+        "story"
+      ]
+    ],
+    "style": {
+      "preset": "bottom-bold",
+      "maxWords": 3
+    },
+    "enabled": false
+  },
+  "clips": [
+    {
+      "id": "kinetic",
+      "component": "KineticText",
+      "from": 0,
+      "to": 3,
+      "props": {
+        "tokens": [
+          "MAKE",
+          "IT",
+          "COUNT"
+        ]
+      },
+      "track": 2
+    },
+    {
+      "id": "stat",
+      "component": "StatCard",
+      "from": 3,
+      "to": 6,
+      "props": {
+        "label": "Audience growth",
+        "value": "4.8×",
+        "subtitle": "In just one campaign"
+      },
+      "track": 2
+    },
+    {
+      "id": "chart",
+      "component": "BarChartRace",
+      "from": 6,
+      "to": 10,
+      "props": {
+        "title": "Campaign results",
+        "items": [
+          {
+            "label": "Reach",
+            "value": 88
+          },
+          {
+            "label": "Engagement",
+            "value": 67
+          },
+          {
+            "label": "Leads",
+            "value": 45
+          }
+        ]
+      },
+      "track": 2
+    },
+    {
+      "id": "cta",
+      "component": "EndCardGeneric",
+      "from": 10,
+      "to": 15.5,
+      "props": {
+        "title": "Your next campaign starts here",
+        "subtitle": "One idea. A bigger impact.",
+        "cta": "Let's talk",
+        "handle": "studio@example.com"
+      },
+      "track": 2
+    }
+  ],
+  "transitions": [
+    {
+      "at": 3,
+      "type": "flip",
+      "duration": 0.5
+    },
+    {
+      "at": 6,
+      "type": "wipe",
+      "duration": 0.5
+    },
+    {
+      "at": 10,
+      "type": "fade",
+      "duration": 0.5
+    }
+  ]
+}

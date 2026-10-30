@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "settings": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "background": "#101827",
+    "duration": 12
+  },
+  "theme": {
+    "colors": {
+      "accent": "#e6aa5e"
+    },
+    "fonts": {}
+  },
+  "base": [],
+  "layout": {
+    "mode": "full",
+    "beats": []
+  },
+  "audio": {
+    "sfx": []
+  },
+  "captions": {
+    "words": [
+      [
+        1,
+        1.5,
+        "This"
+      ],
+      [
+        1.5,
+        2,
+        "is"
+      ],
+      [
+        2,
+        2.6,
+        "a"
+      ],
+      [
+        2.6,
+        3.4,
+        "sample"
+      ],
+      [
+        3.4,
+        4,
+        "story"
+      ]
+    ],
+    "style": {
+      "preset": "bottom-bold",
+      "maxWords": 3
+    },
+    "enabled": false
+  },
+  "clips": [
+    {
+      "id": "shot-one",
+      "component": "VideoLayer",
+      "from": 0,
+      "to": 6,
+      "props": {
+        "src": "scene.mp4",
+        "whip": false
+      },
+      "track": 0
+    },
+    {
+      "id": "shot-two",
+      "component": "VideoLayer",
+      "from": 6,
+      "to": 12,
+      "props": {
+        "src": "city.mp4",
+        "whip": false
+      },
+      "track": 0
+    },
+    {
+      "id": "grade",
+      "component": "ColorGrade",
+      "from": 0,
+      "to": 12,
+      "props": {
+        "tint": "rgba(170,105,55,.14)"
+      },
+      "track": 1
+    },
+    {
+      "id": "grain",
+      "component": "FilmGrain",
+      "from": 0,
+      "to": 12,
+      "props": {
+        "intensity": 0.055
+      },
+      "track": 2
+    },
+    {
+      "id": "vignette",
+      "component": "Vignette",
+      "from": 0,
+      "to": 12,
+      "props": {},
+      "track": 3
+    },
+    {
+      "id": "letterbox",
+      "component": "Letterbox",
+      "from": 0,
+      "to": 12,
+      "props": {
+        "ratio": 2.39
+      },
+      "track": 4
+    },
+    {
+      "id": "title",
+      "component": "FullscreenText",
+      "from": 1,
+      "to": 5,
+      "props": {
+        "text": "Between light and shadow",
+        "size": 96,
+        "font": "Instrument Serif",
+        "color": "#ffffff",
+        "background": "dim"
+      },
+      "track": 5
+    },
+    {
+      "id": "leak",
+      "component": "LightLeak",
+      "from": 8.5,
+      "to": 10,
+      "props": {
+        "intensity": 0.18
+      },
+      "track": 6
+    }
+  ],
+  "transitions": [
+    {
+      "at": 6,
+      "type": "scenePush",
+      "duration": 0.6
+    },
+    {
+      "at": 8.5,
+      "type": "lightLeak",
+      "duration": 0.6
+    }
+  ]
+}

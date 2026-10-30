@@ -1,0 +1,33 @@
+{
+  "edit": "edit.json",
+  "title": "podcast9x16 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "NarratorPiP + Spectrum",
+      "note": "Actual talking person from v4/cut.mp4 with a readable podcast header and framed inset. Voice-driven spectrum in its dedicated panel; no procedural fallback with voice.wav present.",
+      "components": [
+        "pip",
+        "spectrum"
+      ]
+    },
+    {
+      "t": 1.3,
+      "title": "Real words / voice sync",
+      "note": "Actual talking person, real voice amplitude and active Arabic/Latin karaoke token."
+    },
+    {
+      "t": 6.4,
+      "title": "Real words / voice sync",
+      "note": "Actual talking person, real voice amplitude and active Arabic/Latin karaoke token."
+    },
+    {
+      "t": 13.3,
+      "title": "Real words / voice sync",
+      "note": "Actual talking person, real voice amplitude and active Arabic/Latin karaoke token."
+    }
+  ]
+}

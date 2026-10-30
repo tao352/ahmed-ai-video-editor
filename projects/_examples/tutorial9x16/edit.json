@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "settings": { "width": 1080, "height": 1920, "fps": 30, "background": "#0b1220", "duration": 8 },
+  "theme": { "colors": {}, "fonts": {} },
+  "base": [],
+  "layout": { "mode": "full", "beats": [] },
+  "captions": { "words": [], "enabled": false },
+  "clips": [
+    {
+      "id": "phone-demo",
+      "component": "PhoneScreen",
+      "from": 0,
+      "to": 8,
+      "track": 0,
+      "props": {
+        "src": "tutorial-screen-placeholder.mp4",
+        "holdLast": 1,
+        "zooms": [{ "t0": 2, "t1": 4, "x": 0.5, "y": 0.4, "scale": 1.35 }],
+        "taps": [{ "t": 3, "x": 0.72, "y": 0.58 }]
+      }
+    },
+    {
+      "id": "step-one",
+      "component": "StepBadge",
+      "from": 0.3,
+      "to": 7.7,
+      "track": 1,
+      "props": { "step": 1, "total": 3, "title": "إدارة الأشخاص Person Management" }
+    }
+  ]
+}

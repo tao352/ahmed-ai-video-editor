@@ -1,0 +1,16 @@
+# Python packages for the editor's media tools (tools/edit/editor_tools.py) and Claude's editing tools.
+# Install: python -m pip install -r requirements.txt
+# Tracking needs more (torch + sam2): see INSTALL.md, "Tracking", or run setup.ps1 -Tracking.
+numpy
+opencv-python
+mediapipe
+librosa
+soundfile
+scipy
+pyloudnorm
+Pillow
+requests
+scenedetect
+faster-whisper
+arabic-reshaper
+python-bidi

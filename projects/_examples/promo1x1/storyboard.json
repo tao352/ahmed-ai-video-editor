@@ -1,0 +1,68 @@
+{
+  "edit": "edit.json",
+  "title": "promo1x1 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "KineticText",
+      "note": "All hook tokens fit inside the safe area on a dark panel.",
+      "components": [
+        "kinetic"
+      ]
+    },
+    {
+      "t": 3.25,
+      "title": "flip transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        3,
+        3.6
+      ]
+    },
+    {
+      "t": 3.6,
+      "title": "StatCard",
+      "note": "4.8x at 14u in a panel filling at least 60% of the square.",
+      "components": [
+        "stat"
+      ]
+    },
+    {
+      "t": 6.25,
+      "title": "wipe transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        6,
+        6.6
+      ]
+    },
+    {
+      "t": 6.6,
+      "title": "BarChartRace",
+      "note": "Large chart panel filling at least 65% of the frame, with readable row labels.",
+      "components": [
+        "chart"
+      ]
+    },
+    {
+      "t": 10.25,
+      "title": "fade transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        10,
+        10.6
+      ]
+    },
+    {
+      "t": 10.6,
+      "title": "EndCardGeneric",
+      "note": "Final solid end card alone: large title, readable subtitle, CTA and handle.",
+      "components": [
+        "cta"
+      ]
+    }
+  ]
+}

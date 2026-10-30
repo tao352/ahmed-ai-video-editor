@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "settings": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "background": "#101827",
+    "duration": 24.5
+  },
+  "theme": {
+    "colors": {
+      "accent": "#e6aa5e"
+    },
+    "fonts": {}
+  },
+  "base": [],
+  "layout": {
+    "mode": "full",
+    "beats": []
+  },
+  "audio": {
+    "sfx": []
+  },
+  "captions": {
+    "words": [
+      [
+        1,
+        1.5,
+        "This"
+      ],
+      [
+        1.5,
+        2,
+        "is"
+      ],
+      [
+        2,
+        2.6,
+        "a"
+      ],
+      [
+        2.6,
+        3.4,
+        "sample"
+      ],
+      [
+        3.4,
+        4,
+        "story"
+      ]
+    ],
+    "style": {
+      "preset": "bottom-bold",
+      "maxWords": 3
+    },
+    "enabled": false
+  },
+  "clips": [
+    {
+      "id": "gallery",
+      "component": "KenBurnsGallery",
+      "from": 0,
+      "to": 18.5,
+      "props": {
+        "images": [
+          {
+            "src": "t03.jpg",
+            "duration": 4.625
+          },
+          {
+            "src": "t09.jpg",
+            "duration": 4.625
+          },
+          {
+            "src": "t15.jpg",
+            "duration": 4.625
+          },
+          {
+            "src": "t21.jpg",
+            "duration": 4.625
+          }
+        ],
+        "duration": 18.5,
+        "imageDuration": 3
+      },
+      "track": 0
+    },
+    {
+      "id": "hero",
+      "component": "PropertyHero",
+      "from": 0,
+      "to": 4.5,
+      "props": {
+        "title": "فيلا مستقلة",
+        "subtitle": "التجمع الخامس، القاهرة الجديدة"
+      },
+      "track": 2
+    },
+    {
+      "id": "facts",
+      "component": "PriceFacts",
+      "from": 4.5,
+      "to": 9,
+      "props": {
+        "price": 12500000,
+        "currency": "ج.م",
+        "beds": 4,
+        "baths": 3,
+        "area": 320,
+        "locale": "ar-EG",
+        "arabicNumerals": true,
+        "title": "السعر والمواصفات"
+      },
+      "track": 2
+    },
+    {
+      "id": "features",
+      "component": "FeatureChips",
+      "from": 9,
+      "to": 14,
+      "props": {
+        "items": [
+          "حمام سباحة خاص",
+          "جنينة ٣٠٠ م²",
+          "جراج لعربيتين"
+        ],
+        "title": "مزايا العقار"
+      },
+      "track": 2
+    },
+    {
+      "id": "map",
+      "component": "MapPins",
+      "from": 14,
+      "to": 18.5,
+      "props": {
+        "pins": [
+          {
+            "x": 30,
+            "y": 48,
+            "label": "الفيلا"
+          },
+          {
+            "x": 72,
+            "y": 65,
+            "label": "الجامعة الأمريكية"
+          }
+        ],
+        "title": "موقع متميز"
+      },
+      "track": 2
+    },
+    {
+      "id": "end",
+      "component": "EndCardGeneric",
+      "from": 18.5,
+      "to": 24.5,
+      "props": {
+        "title": "احجز معاينتك النهارده",
+        "subtitle": "أحمد سامي · مستشار عقاري",
+        "cta": "اتصل دلوقتي",
+        "handle": "+20 100 000 0000"
+      },
+      "track": 2
+    }
+  ],
+  "transitions": [
+    {
+      "at": 9,
+      "type": "clockWipe",
+      "duration": 0.5
+    },
+    {
+      "at": 14,
+      "type": "wipe",
+      "duration": 0.5
+    }
+  ]
+}

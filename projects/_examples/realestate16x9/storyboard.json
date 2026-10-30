@@ -1,0 +1,68 @@
+{
+  "edit": "edit.json",
+  "title": "realestate16x9 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "KenBurnsGallery + PropertyHero",
+      "note": "Full-frame property stand-in photo with alternating Ken Burns motion. Arabic property title at 9u and subtitle at 3.4u over the photos.",
+      "components": [
+        "gallery",
+        "hero"
+      ]
+    },
+    {
+      "t": 5.1,
+      "title": "PriceFacts",
+      "note": "Arabic price, currency, beds, baths and area clearly visible in a single panel.",
+      "components": [
+        "facts"
+      ]
+    },
+    {
+      "t": 9.25,
+      "title": "clockWipe transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        9,
+        9.6
+      ]
+    },
+    {
+      "t": 9.6,
+      "title": "FeatureChips",
+      "note": "Large Arabic feature chips, each at least 6u tall.",
+      "components": [
+        "features"
+      ]
+    },
+    {
+      "t": 14.25,
+      "title": "wipe transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        14,
+        14.6
+      ]
+    },
+    {
+      "t": 14.6,
+      "title": "MapPins",
+      "note": "Two separated, legible Arabic location labels on a dark grid map.",
+      "components": [
+        "map"
+      ]
+    },
+    {
+      "t": 19.1,
+      "title": "EndCardGeneric",
+      "note": "Final solid end card alone: large title, readable subtitle, CTA and handle.",
+      "components": [
+        "end"
+      ]
+    }
+  ]
+}

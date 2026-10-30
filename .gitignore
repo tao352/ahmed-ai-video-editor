@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.remotion/
+__pycache__/
+tools/track/models/
+projects/*
+!projects/_examples/
+projects/**/public/
+projects/**/history/
+projects/**/out/
+editor/user/
+assets/music_*/
+editor/.launch.log
+*.part
+work/

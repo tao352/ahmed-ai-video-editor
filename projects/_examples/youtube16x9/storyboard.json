@@ -1,0 +1,67 @@
+{
+  "edit": "edit.json",
+  "title": "youtube16x9 / Phase 2b review",
+  "summary": "Canvas scale, legibility, dedicated regions and authored transitions.",
+  "scale": 0.5,
+  "cols": 3,
+  "moments": [
+    {
+      "t": 0.6,
+      "title": "ChapterTitle",
+      "note": "Large chapter headline, clear subtitle, dark panel and one accent rule.",
+      "components": [
+        "chapter"
+      ]
+    },
+    {
+      "t": 3.75,
+      "title": "slide transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        3.5,
+        4.1
+      ]
+    },
+    {
+      "t": 4.1,
+      "title": "LowerThird",
+      "note": "Readable name and role in the lower-third safe region, above captions.",
+      "components": [
+        "lower"
+      ]
+    },
+    {
+      "t": 7.1,
+      "title": "VideoLayer",
+      "note": "B-roll fills the scene; footage remains sharp at its landing frame.",
+      "components": [
+        "broll"
+      ]
+    },
+    {
+      "t": 10.25,
+      "title": "fade transition",
+      "note": "Real TransitionSeries presentation: outgoing scene and incoming scene share the transition window. The authored clip/voice clocks do not shift.",
+      "clip": [
+        10,
+        10.6
+      ]
+    },
+    {
+      "t": 10.6,
+      "title": "KpiCounter",
+      "note": "Large animated number and readable label occupy a 60% panel.",
+      "components": [
+        "kpi"
+      ]
+    },
+    {
+      "t": 14.1,
+      "title": "EndCardGeneric",
+      "note": "Final solid end card alone: large title, readable subtitle, CTA and handle.",
+      "components": [
+        "end"
+      ]
+    }
+  ]
+}
